@@ -58,3 +58,11 @@ func userExists(name string) (bool, error) {
 	}
 	return true, nil
 }
+
+func sshDataDir() (string, error) {
+	return "/etc/ssh", nil
+}
+
+func fixAuthorizedKeysFilePermissions(path string) error {
+	return nil
+}

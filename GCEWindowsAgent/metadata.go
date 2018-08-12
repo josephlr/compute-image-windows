@@ -51,6 +51,8 @@ type projectJSON struct {
 }
 
 type attributesJSON struct {
+	BlockProjectSSHKeys   string `json:"block-project-ssh-keys"`
+	SSHKeys               string `json:"ssh-keys"`
 	WindowsKeys           string `json:"windows-keys"`
 	Diagnostics           string `json:"diagnostics"`
 	DisableAddressManager string `json:"disable-address-manager"`

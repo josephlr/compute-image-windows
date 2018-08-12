@@ -94,7 +94,7 @@ func runUpdate() {
 	config = cfg
 
 	var wg sync.WaitGroup
-	for _, mgr := range []manager{newWsfcManager(), &addressMgr{}, &accountsMgr{}, &diagnosticsMgr{}} {
+	for _, mgr := range []manager{newWsfcManager(), &addressMgr{}, &accountsMgr{}, &diagnosticsMgr{}, &sshMgr{}} {
 		wg.Add(1)
 		go func(mgr manager) {
 			defer wg.Done()
